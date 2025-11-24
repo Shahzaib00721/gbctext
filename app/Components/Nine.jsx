@@ -21,7 +21,7 @@ export default function Footer() {
 
       
           <div className="flex items-start gap-2 text-sm text-gray-700">
-            <svg width="40" height="40" fill="#333" viewBox="0 0 24 24">
+            <svg width="30" height="30" fill="#333" viewBox="0 0 24 24">
    <MapPin className="w-12 h-10 text-[#999999]"/>
             </svg>
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon Baker Rd, North York, ON, M2H 3B4, Canada</p>
