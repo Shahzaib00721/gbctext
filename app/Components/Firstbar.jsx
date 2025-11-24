@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function First() {
   return (
-    <div className="relative w-full h-[380px] px-4 sm:h-64 sm:min-h-[100px] md:h-96 lg:h-[288px] overflow-hidden">
+    <div className="relative w-full h-[380px] px-4  sm:h-64 sm:min-h-[100px] md:h-96 lg:h-[288px] overflow-hidden">
      
       <div 
         className="absolute inset-0 bg-cover h-[380px] sm:h-[290px]  bg-center"
@@ -24,7 +24,7 @@ export default function First() {
             Home / <span className="font-normal text-white ">TCF Canada Test</span>
           </p>
         </div>
-
+     
        
         <h1 className="text-white text-[29px] sm:text-4xl md:text-4xl lg:text-3xl font-semibold mb-6 sm:mb-5 md:mb-7 tracking-wide">
           TCF CANADA TEST
