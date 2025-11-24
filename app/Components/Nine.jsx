@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
 
         
-        <div className="flex self-start gap-2">
+        <div className="flex self-center md:self-start gap-2">
           <div className="bg-[#35238D] p-3 rounded-full cursor-pointer">
             <svg width="18" height="18" fill="white" viewBox="0 0 24 24">
               <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 4.8 3.4 8.8 7.9 9.8v-6.9H7.6v-2.9h2.3V9.8c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .1 2.3.1v2.6H14c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v6.9C18.6 20.8 22 16.8 22 12z"/>
