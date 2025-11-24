@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 import { Phone } from "lucide-react";
 export default function Footer() {
   return (
-    <footer className="bg-[#E9EDF6] w-full py-5 px-6   ">
+    <footer className="bg-[#E9EDF6] w-full py-5 px-5   ">
       <div className="flex flex-col md:flex-row justify-between gap-8 2xl:px-30 container mx-auto md:gap-30">
 
       

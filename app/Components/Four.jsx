@@ -3,16 +3,16 @@ export default function TCFResultsTimeline() {
   return (
     <div className="w-full bg-white py-12 px-4  ">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+        
         <h1 className="text-3xl sm:text-3xl lg:text-4xl font-semibold text-[#1a1a5e] mb-8 text-center">
           TCF Results Timeline And Format
         </h1>
 
-        {/* Content Grid */}
+        
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-4 lg:gap-4 items-start">
-          {/* Left Section */}
+          
           <div className="space-y-5  ">
-            {/* Info Box 1 */}
+
             <div className="flex gap-3">
               <span className="text-red-500 text-lg font-medium flex-shrink-0 mt-0.5">■</span>
               <p className="text-[16px] sm:text-base font-medium text-[#666666] leading-relaxed">
@@ -20,7 +20,7 @@ export default function TCFResultsTimeline() {
               </p>
             </div>
 
-            {/* Info Box 2 */}
+           
             <div className="flex gap-3">
               <span className="text-red-500  text-lg  flex-shrink-0 mt-0.5">■</span>
               <p className="text-[16px] font-medium sm:text-base text-[#666666] leading-relaxed">
@@ -28,7 +28,7 @@ export default function TCFResultsTimeline() {
               </p>
             </div>
 
-            {/* Certificate Format Box */}
+          
             <div className="bg-[#f3f4f8] rounded-lg p-6 mt-6">
               <h2 className="text-[20px] sm:text-xl font-semibold text-[#333333] mb-4">
                 The certificate is in a new simplified DIGITAL format which includes:
@@ -48,7 +48,7 @@ export default function TCFResultsTimeline() {
             </div>
           </div>
 
-          {/* Right Section - Phone Image */}
+   
           <div className="flex justify-center lg:justify-end items-center">
             <div className="relative w-full max-w-[400px] lg:max-w-[1400px]">
               <img 

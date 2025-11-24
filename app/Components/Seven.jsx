@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -43,21 +44,21 @@ export default function CoursesSection() {
   ];
 
   return (
-    <div className=" bg-gray-50 py-8 px-4 sm:px-4">
+    <div className=" bg-white py-8 px-4 sm:px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
+   
         <h1 className="text-[36px] md:text-[36px] font-semibold text-[#200164] text-center mb-10">
           Prepare For The Exam
         </h1>
 
-        {/* Courses Grid - Mobile: 1 column, MD+: 3 columns */}
+      
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {courses.map((course, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform transition-transform"
             >
-              {/* Image Section */}
+            
               <div className="relative">
                 <img
                   src="/home1.jpg"
@@ -66,9 +67,9 @@ export default function CoursesSection() {
                 />
               </div>
 
-              {/* Content Section */}
+            
               <div className="px-5 pb-2 pt-5 ">
-                {/* Badge and Heart */}
+             
                 <div className="flex items-center justify-between mb-3">
                   <span className="bg-[#F2DEDF] text-[#F8393B] text-[14px] font-semibold px-3 py-1 rounded uppercase tracking-wide">
                     Beginner
@@ -88,19 +89,19 @@ export default function CoursesSection() {
                   </button>
                 </div>
 
-                {/* Title */}
+            
                 <h2 className="text-[22px] font-semibold text-[#333333] mb-1">
                   {course.title}
                 </h2>
 
-                {/* Description */}
+               
                 <p className="text-[#333333] text-[16px] font-regular mb-5">
                   {course.description}
                 </p>
 
-                {/* Footer: CTA/Price and Rating */}
+              
                 <div className="flex items-center justify-between">
-                  {/* CTA or Price */}
+               
                   <div>
                     {course.showPrice ? (
                       <span className="text-[36px] font-bold text-[#333333]">
@@ -116,7 +117,7 @@ export default function CoursesSection() {
                     )}
                   </div>
 
-                  {/* Rating */}
+                
                   <div className="flex items-center mt-3 gap-1">
                     <span className="text-[#FEA333] font-semibold text-[14px]">
                       4.2
@@ -134,9 +135,9 @@ export default function CoursesSection() {
           ))}
         </div>
 
-        {/* Pagination */}
+     
         <div className="flex items-center justify-center gap-2">
-          {/* Previous Button */}
+       
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
@@ -146,7 +147,7 @@ export default function CoursesSection() {
             <ChevronLeft className="w-5 h-5" />
           </button>
 
-          {/* Page Numbers */}
+     
           {[...Array(totalPages)].map((_, index) => {
             const page = index + 1;
             return (
@@ -164,7 +165,7 @@ export default function CoursesSection() {
             );
           })}
 
-          {/* Next Button */}
+       
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
