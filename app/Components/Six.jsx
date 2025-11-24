@@ -82,16 +82,16 @@ export default function UpcomingTests() {
   const handleNextPage = () => currentPage < totalPages && handlePageChange(currentPage + 1);
 
   return (
-    <div className="w-full bg-white py-8 px-4">
+    <div className="w-full bg-white  py-8 px-4">
       <div className="max-w-[1240px] mx-auto">
         <h2 className="text-center text-[36px] sm:text-[40px] font-semibold text-[#1a1a4e] mb-10 sm:mb-5">
           Upcoming Tests
         </h2>
 
         {/* Test cards */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mb-10`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 lg:gap-5 mb-10`}>
           {currentTests.map((test) => (
-            <div key={test.id} className="bg-white rounded-[16px] overflow-hidden border border-[#F2F2F298] hover:shadow-xl transition-shadow duration-300">
+            <div key={test.id} className="bg-white rounded-[16px] overflow-hidden shadow-sm border border-[#F2F2F298] hover:shadow-2xl transition-shadow duration-300">
               <div className="relative h-[180px] sm:h-[240px] overflow-hidden">
                 <img
                   src={test.image}

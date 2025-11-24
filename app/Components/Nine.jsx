@@ -4,8 +4,8 @@ import { Mail } from 'lucide-react';
 import { Phone } from "lucide-react";
 export default function Footer() {
   return (
-    <footer className="bg-[#E9EDF6] w-full py-5 px-5   ">
-      <div className="flex flex-col md:flex-row justify-between gap-8 2xl:px-30 container mx-auto md:gap-30">
+    <footer className="bg-[#E9EDF6] w-full py-5 px-5 pt-10   ">
+      <div className="flex flex-col md:flex-row justify-between gap-8 2xl:px-33 container mx-auto md:gap-30">
 
       
         <div className="space-y-4 w-full md:w-1/1">
@@ -21,7 +21,7 @@ export default function Footer() {
 
       
           <div className="flex items-start gap-2 text-sm text-gray-700">
-            <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
+            <svg width="40" height="40" fill="#333" viewBox="0 0 24 24">
    <MapPin className="w-12 h-10 text-[#999999]"/>
             </svg>
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon Baker Rd, North York, ON, M2H 3B4, Canada</p>

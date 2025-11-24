@@ -1,4 +1,4 @@
-// components/TCFRegistrationProcess.js
+"use client";
 import Image from 'next/image';
 
 export default function TCFRegistrationProcess() {
@@ -52,7 +52,7 @@ export default function TCFRegistrationProcess() {
   return (
     <div className="bg-white py-10 px-3   ">
       <div className="max-w-[1240px] mx-auto">
-        {/* Header */}
+     
         <div className="text-center mb-7">
           <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold text-[#1e0a5e] ">
             TCF Canada Registration Process
@@ -63,14 +63,14 @@ export default function TCFRegistrationProcess() {
           </p>
         </div>
 
-        {/* Steps Grid */}
+     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {steps.map((step, index) => (
             <div
               key={index}
               className="bg-[#200164] from-[#200164] to-[#1a0845] font-sans rounded-[16px] p-8 sm:p-4 h-[499px] flex flex-col"
             >
-              {/* Step Header */}
+          
               <div className="flex items-center gap-2 mb-5">
                 <div className="w-13 h-13 relative flex-shrink-0">
                   <Image
@@ -91,7 +91,7 @@ export default function TCFRegistrationProcess() {
                 </div>
               </div>
 
-              {/* Step Content */}
+          
               <div className="flex flex-col gap-[13px]">
                 {step.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex items-start gap-3">
