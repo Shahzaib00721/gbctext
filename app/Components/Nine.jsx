@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="bg-[#E9EDF6] w-full py-5 px-6   ">
       <div className="flex flex-col md:flex-row justify-between gap-8 2xl:px-30 container mx-auto md:gap-30">
 
-        {/* LEFT SECTION */}
+      
         <div className="space-y-4 w-full md:w-1/1">
 
-          {/* Logo + Text */}
+        
           <div className="flex items-center gap-3">
             <img src="/img1 (3).png" className="w-[214px] h-[80px]" alt="logo" />
           
@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Address */}
+      
           <div className="flex items-start gap-2 text-sm text-gray-700">
             <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
    <MapPin className="w-12 h-10 text-[#999999]"/>
@@ -35,7 +35,7 @@ export default function Footer() {
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[#999999] font-regular text-[16px] ">E-Mail: </span>  Admin@gblc.ca</p>
           </div>
 
-          {/* Phone */}
+    
           <div className="flex items-center gap-2 text-sm text-gray-700">
             <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
      <Phone size={24} color="#999999" />
@@ -45,7 +45,7 @@ export default function Footer() {
 
         </div>
 
-        {/* MIDDLE LINKS */}
+       
         <div className="flex flex-col text-[#999999] text-semibold text-[16px] space-y-4 md:w-1/3">
           <a href="#" className="hover:text-gray-700">Testing</a>
           <a href="#" className="hover:text-gray-700">Exam Preparation</a>
@@ -56,7 +56,7 @@ export default function Footer() {
           <a href="#" className="hover:text-gray-700">Resources</a>
         </div>
 
-        {/* SOCIAL ICONS */}
+        
         <div className="flex self-start gap-2">
           <div className="bg-[#35238D] p-3 rounded-full cursor-pointer">
             <svg width="18" height="18" fill="white" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ export default function Footer() {
 
       </div>
 
-      {/* Bottom Border */}
+
       <div className="border-t border-gray-300 mt-10 pt-4">
         <p className="text-center text-[#4D4D4D] font-regular text-[14px] ">Privacy Policy</p>
       </div>
