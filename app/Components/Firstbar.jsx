@@ -26,7 +26,7 @@ export default function First() {
         </div>
 
        
-        <h1 className="text-white text-[34px] sm:text-4xl md:text-4xl lg:text-3xl font-semibold mb-6 sm:mb-5 md:mb-7 tracking-wide">
+        <h1 className="text-white text-[50px] sm:text-4xl md:text-4xl lg:text-3xl font-semibold mb-6 sm:mb-5 md:mb-7 tracking-wide">
           TCF CANADA TEST
         </h1>
 
