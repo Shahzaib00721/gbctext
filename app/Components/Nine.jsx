@@ -5,10 +5,10 @@ import { Phone } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#E9EDF6] w-full py-5 px-5 pt-10   ">
-      <div className="flex flex-col md:flex-row justify-between gap-8 2xl:px-33 container mx-auto md:gap-30">
+      <div className="flex flex-col lg:flex-row justify-between gap-8 2xl:px-33 max-w-6xl px-4 mx-auto lg:gap-30">
 
       
-        <div className="space-y-4 w-full md:w-1/1">
+        <div className="space-y-4 w-full lg:w-1/1">
 
         
           <div className="flex items-center gap-3">
@@ -21,32 +21,26 @@ export default function Footer() {
 
       
           <div className="flex items-start gap-2 text-sm text-gray-700">
-            <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
-   <MapPin className="w-12 h-10 text-[#999999]"/>
-            </svg>
-            <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon Baker Rd, North York, ON, M2H 3B4, Canada</p>
+           <img src="loc.svg" alt="" />
+            <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon  Rd, North York, ON, M2H 3B4, Canada</p>
           </div>
 
           {/* Email */}
           <div className="flex items-center gap-2 text-sm text-gray-700">
-            <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
-               <Mail size={24} color="#999999" />
-            </svg>
+           <img src="mal.svg" alt="" />
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[#999999] font-regular text-[16px] ">E-Mail: </span>  Admin@gblc.ca</p>
           </div>
 
     
           <div className="flex items-center gap-2 text-sm text-gray-700">
-            <svg width="18" height="18" fill="#333" viewBox="0 0 24 24">
-     <Phone size={24} color="#999999" />
-            </svg>
+           <img src="phn.svg" alt="" />
             <p className="text-[#4D4D4D] text-[16px] font-medium"><span className="text-[#999999] font-regular text-[16px]">Phone: </span>    +1-437-317-7180</p>
           </div>
 
         </div>
 
        
-        <div className="flex flex-col text-[#999999] text-semibold text-[16px] space-y-4 md:w-1/3">
+        <div className="flex flex-col text-[#999999] text-semibold text-[16px] space-y-4 lg:w-1/3">
           <a href="#" className="hover:text-gray-700">Testing</a>
           <a href="#" className="hover:text-gray-700">Exam Preparation</a>
           <a href="#" className="hover:text-gray-700">About Us</a>
@@ -57,7 +51,7 @@ export default function Footer() {
         </div>
 
         
-        <div className="flex self-center md:self-start gap-2">
+        <div className="flex self-center lg:self-start gap-2">
           <div className="bg-[#35238D] p-3 rounded-full cursor-pointer">
             <svg width="18" height="18" fill="white" viewBox="0 0 24 24">
               <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 4.8 3.4 8.8 7.9 9.8v-6.9H7.6v-2.9h2.3V9.8c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .1 2.3.1v2.6H14c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v6.9C18.6 20.8 22 16.8 22 12z"/>

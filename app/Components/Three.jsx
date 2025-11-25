@@ -50,8 +50,8 @@ export default function TCFRegistrationProcess() {
   ];
 
   return (
-    <div className="bg-white py-10 px-3   ">
-      <div className="max-w-[1240px] mx-auto">
+    <div className="bg-white py-10 px-4  ">
+      <div className="max-w-6xl mx-auto md:px-4  ">
      
         <div className="text-center mb-7">
           <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold text-[#1e0a5e] ">
@@ -64,7 +64,7 @@ export default function TCFRegistrationProcess() {
         </div>
 
      
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {steps.map((step, index) => (
             <div
               key={index}

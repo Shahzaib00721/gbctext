@@ -32,14 +32,10 @@ export default function RegistrationForms() {
   ];
 
   return (
-    <div className=" bg-white p-4 mb-10 sm:px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className=" bg-white p-4 mb-5 sm:px-4">
+      <div className="max-w-6xl mx-auto md:px-4 ">
        
-        <div className="flex justify-center mb-10">
-          <button className="bg-[#1a0b4d] text-white px-8 py-3 text-[18px] rounded-lg font-semibold hover:bg-[#2a1b5d] transition-colors duration-300">
-            View More
-          </button>
-        </div>
+        
 
 
         <h1 className="text-3xl sm:text-4xl font-semibold text-[#1a0b4d] text-[36px] text-center mb-10">
@@ -53,11 +49,11 @@ export default function RegistrationForms() {
               key={index}
               className={`
                 ${form.isDark ? 'bg-[#3d3d3d]' : 'bg-[#E9EDF6]'}
-                rounded-xl p-4  text-center
+                rounded-xl p-2  text-center
                 hover:-translate-y-1 hover:shadow-xl
                 transition-all duration-300 cursor-pointer
                 flex flex-col items-center justify-center
-                min-h-[140px]
+                min-h-[175px]
               `}
             >
              
@@ -65,14 +61,14 @@ export default function RegistrationForms() {
                 <img 
                   src={form.image} 
                   alt={form.title}
-                  className="w-12 h-12 object-contain mx-auto"
+                  className="w-8 h-8 object-contain mx-auto"
                 />
               </div>
 
       
               <h3 className={`
-                text-base font-semibold text-[18px] whitespace-pre-line leading-snug
-                ${form.isDark ? 'text-white' : 'text-red-600'}
+                text-base font-semibold text-[17px] whitespace-pre-line leading-snug
+                ${form.isDark ? 'text-white' : 'text-[#F8393B]'}
                 ${index === 0 ? 'mb-9' : 'mb-3'}
               `}>
                 {form.title}

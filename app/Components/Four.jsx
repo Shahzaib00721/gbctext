@@ -1,8 +1,8 @@
 "use client";
 export default function TCFResultsTimeline() {
   return (
-    <div className="w-full bg-white py-12 px-4  ">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-white pb-6   ">
+      <div className="max-w-6xl mx-auto px-4">
         
         <h1 className="text-3xl sm:text-3xl lg:text-4xl font-semibold text-[#1a1a5e] mb-8 text-center">
           TCF Results Timeline And Format

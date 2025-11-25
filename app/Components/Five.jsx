@@ -35,8 +35,8 @@ export default function VerifySteps() {
   ];
 
   return (
-    <div className="w-full bg-[#eef1f9] py-8 px-4 sm:py-12  ">
-      <div className="max-w-[340px] sm:max-w-[1240px] mx-auto">
+    <div className="w-full bg-[#eef1f9] py-8 px-4 md:px-0 sm:py-12  ">
+      <div className="max-w-[340px] sm:max-w-6xl mx-auto md:px-4 ">
         <h2 className="text-center text-[28px] leading-tight sm:text-[36px] font-semibold text-[#2c1a74] mb-8 sm:mb-10">
           Steps To Verify Your Results
         </h2>

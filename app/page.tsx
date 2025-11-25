@@ -11,6 +11,7 @@ import Six from './Components/Six'
 import Seven from './Components/Seven'
 import Eight from './Components/Eight'
 import Nine from './Components/Nine'
+
  
 
 
@@ -25,8 +26,8 @@ export default function Header() {
 
   return (
     <header className="bg-white  shadow-md sticky  top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-3 ">
-        <nav className="flex items-center justify-baseline gap-12   pb-7">
+      <div className="max-w-6xl mx-auto  sm:px-3 ">
+        <nav className="flex items-center justify-baseline gap-8   pb-7">
         
           <a href="#" className="flex  items-center gap-3">
             <div className=" h-28 flex items-center justify-center ">
@@ -74,7 +75,7 @@ export default function Header() {
             </li>
           </ul>
 
-          <div className="flex items-center gap-2 md:gap-12">
+          <div className="flex items-center gap-2 md:gap-10">
           
             <div className="flex bg-slate-100 rounded-full shadow-xl p-1 gap-1">
               <button
@@ -123,9 +124,11 @@ export default function Header() {
         >
           <ul className="py-4 space-y-3 border-t border-slate-200">
             <li>
+              
               <a href="#" className="block py-2 text-slate-700 font-medium hover:text-purple-700 hover:bg-slate-50 px-4 rounded-lg transition-colors">
                 Home
               </a>
+          
             </li>
             <li>
               <a href="#" className="block py-2 text-slate-700 font-medium hover:text-purple-700 hover:bg-slate-50 px-4 rounded-lg transition-colors">

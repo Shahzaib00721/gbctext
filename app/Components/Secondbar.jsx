@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function TCFCanada() {
   return (
-    <div className="max-w-7xl mx-auto  px-4 p-3 bg-white">
+    <div className="max-w-6xl mx-auto  px-4 p-3 bg-white">
       <h1 className="text-[35px] font-semibold text-[#1e0a5e]  mb-6">TCF Canada Test Overview</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-7 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7  ">
         <div className=''>
           <table className="w-full h-65 border border-[#D2D8E7] mb-4 text-[14px] text-[#252E47] ">
             <tbody>
