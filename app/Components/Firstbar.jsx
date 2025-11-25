@@ -17,7 +17,7 @@ export default function First() {
       </div>
 
      
-      <div className="relative z-10 h-[350px] sm:h-65 md:h-70 max-w-6xl mx-auto px-5    2xl:px-5      flex flex-col justify-center">
+      <div className="relative z-10 h-[350px] sm:h-65 md:h-70 max-w-6xl mx-auto px-4    2xl:px-5      flex flex-col justify-center">
        
         <div className="mb-2 sm:mb-2">
           <p className="text-gray-300 text-[14px] sm:text-[14px] font-semibold">

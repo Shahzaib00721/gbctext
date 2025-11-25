@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="bg-white  shadow-md sticky  top-0 z-50">
-      <div className="max-w-6xl mx-auto  sm:px-3 ">
+      <div className="max-w-6xl mx-auto px-4  sm:px-3 ">
         <nav className="flex items-center justify-baseline gap-8   pb-7">
         
           <a href="#" className="flex  items-center gap-3">
