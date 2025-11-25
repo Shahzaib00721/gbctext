@@ -6,7 +6,7 @@ export default function TCFRegistrationProcess() {
     {
       number: "Step 1",
       title: "Registration",
-      iconSrc: "/pen.svg", // Replace with your image path
+      iconSrc: "/pen.svg",
       items: [
         "Prior registration, please make sure that you need the TCF-Canada.",
         "It is the sole responsibility of the candidate to ensure that he/she is registered for the appropriate exam.",
@@ -16,7 +16,7 @@ export default function TCFRegistrationProcess() {
     {
       number: "Step 2",
       title: "Fill Details",
-      iconSrc: "/pen2.svg", // Replace with your image path
+      iconSrc: "/pen2.svg", 
       items: [
         "Fill the details after registration process. Write your informations in the fields."
       ]
@@ -24,7 +24,7 @@ export default function TCFRegistrationProcess() {
     {
       number: "Step 3",
       title: "Payment",
-      iconSrc: "/pen3.svg", // Replace with your image path
+      iconSrc: "/pen3.svg", 
       items: [
         "Payments to be made in full at the time of registration.",
         "No transfers, refunds or credits will be granted after the registration to the TCF.",
@@ -34,7 +34,7 @@ export default function TCFRegistrationProcess() {
     {
       number: "Step 4",
       title: "Confirmation",
-      iconSrc: "/pen4.svg", // Replace with your image path
+      iconSrc: "/pen4.svg", 
       items: [
         "To take the test, the candidate must be 16 and older."
       ]
@@ -42,7 +42,7 @@ export default function TCFRegistrationProcess() {
     {
       number: "Step 4",
       title: "Upload",
-      iconSrc: "/pen5.svg", // Replace with your image path
+      iconSrc: "/pen5.svg", 
       items: [
         "Upload your documents and the process is done !"
       ]
@@ -68,7 +68,7 @@ export default function TCFRegistrationProcess() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-[#200164] from-[#200164] to-[#1a0845] font-sans rounded-[16px] p-8 sm:p-4 h-[499px] flex flex-col"
+              className="bg-[#200164] from-[#200164] to-[#1a0845] font-sans rounded-[16px] p-6 sm:p-4 h-[499px] flex flex-col"
             >
           
               <div className="flex items-center gap-2 mb-5">
