@@ -1,6 +1,9 @@
 "use client";
 import { useState } from 'react';
 
+import {  useEffect } from "react";
+
+
 export default function UpcomingTests() {
   const [currentPage, setCurrentPage] = useState(1);
   const testsPerPage = 3; // Desktop: 3 cards, Mobile: 1 card
@@ -56,19 +59,22 @@ export default function UpcomingTests() {
     }
   ];
 
-  // Check if mobile
+   // FIXED: correct hook + window check
   const [isMobile, setIsMobile] = useState(false);
-  
-  useState(() => {
+
+  useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth < 768);
+      }
     };
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Calculate pagination
   const itemsPerPage = isMobile ? 1 : testsPerPage;
   const totalPages = Math.ceil(tests.length / itemsPerPage);
   const indexOfLastTest = currentPage * itemsPerPage;
@@ -77,22 +83,29 @@ export default function UpcomingTests() {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
   };
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
   };
+
 
   return (
     <div className="w-full bg-white pt-8 pb-3 px-4 ">
