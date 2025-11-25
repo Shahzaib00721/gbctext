@@ -22,7 +22,7 @@ export default function Footer() {
       
           <div className="flex items-start gap-2 text-sm text-gray-700">
            <img src="loc.svg" alt="" />
-            <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon  Rd, North York, ON, M2H 3B4, Canada</p>
+            <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon  Rd,<span> North York, ON, M2H 3B4, Canada </span></p>
           </div>
 
           {/* Email */}

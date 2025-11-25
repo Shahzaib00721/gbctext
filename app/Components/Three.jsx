@@ -28,7 +28,7 @@ export default function TCFRegistrationProcess() {
       items: [
         "Payments to be made in full at the time of registration.",
         "No transfers, refunds or credits will be granted after the registration to the TCF.",
-        "In the event of cancellation or rescheduling before the registration deadline, a non-refundable $75 will be charged."
+        "In the event of cancellation or rescheduling  the registration deadline, a non-refundable $75 will be charged."
       ]
     },
     {
