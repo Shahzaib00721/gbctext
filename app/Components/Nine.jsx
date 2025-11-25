@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#E9EDF6] w-full py-5 px-4 pt-10   ">
-      <div className="flex flex-col lg:flex-row justify-between gap-8 2xl:px-33 max-w-6xl px-0 md:px-4 mx-auto lg:gap-30">
+      <div className="flex flex-col lg:flex-row justify-between gap-8  max-w-6xl px-0 md:px-4 mx-auto lg:gap-30">
 
       
         <div className="space-y-4 w-full lg:w-1/1">
@@ -25,7 +25,7 @@ export default function Footer() {
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[16px] font-regular text-[#999999]">Adress: </span>   211-716 Gordon  Rd,<span> North York, ON, M2H 3B4, Canada </span></p>
           </div>
 
-          {/* Email */}
+       
           <div className="flex items-center gap-2 text-sm text-gray-700">
            <img src="mal.svg" alt="" />
             <p className="text-[#4D4D4D] text-[16px] font-medium"> <span className="text-[#999999] font-regular text-[16px] ">E-Mail: </span>  Admin@gblc.ca</p>
