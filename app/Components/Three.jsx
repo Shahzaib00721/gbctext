@@ -10,7 +10,7 @@ export default function TCFRegistrationProcess() {
       items: [
         "Prior registration, please make sure that you need the TCF-Canada.",
         "It is the sole responsibility of the candidate to ensure that he/she is registered for the appropriate exam.",
-        "GBLC and its employees cannot be  responsible for the choices made by the candidate."
+        "GBLC and its employees cannot be responsible for the choices made by the candidate."
       ]
     },
     {
@@ -28,7 +28,7 @@ export default function TCFRegistrationProcess() {
       items: [
         "Payments to be made in full at the time of registration.",
         "No transfers, refunds or credits will be granted after the registration to the TCF.",
-        "In the event of cancellation or rescheduling  the registration deadline, a non-refundable $75 will be charged."
+        "In the event of cancellation or rescheduling the registration deadline, a non-refundable $75 will be charged."
       ]
     },
     {
@@ -40,7 +40,7 @@ export default function TCFRegistrationProcess() {
       ]
     },
     {
-      number: "Step 4",
+      number: "Step 5",
       title: "Upload",
       iconSrc: "/pen5.svg", 
       items: [
@@ -50,29 +50,29 @@ export default function TCFRegistrationProcess() {
   ];
 
   return (
-    <div className="bg-white py-10 px-4  ">
-      <div className="max-w-6xl mx-auto md:px-4  ">
+    <div className="bg-white py-10">
+      <div className="max-w-[1080px] mx-auto md:mx-[100px] ">
      
-        <div className="text-center mb-7">
-          <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold text-[#1e0a5e] ">
+        <div className="text-center mb-7 px-4">
+          <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold text-[#1e0a5e]">
             TCF Canada Registration Process
           </h1>
-          <p className="font-regular  sm:text-[16px] text-gray-600 leading-relaxed">
+          <p className="font-regular sm:text-[16px] text-gray-600 leading-relaxed max-w-3xl mx-auto">
             In order to complete the registration, we need the{' '}
             <span className="text-red-500 font-regular">completed form</span>, copy of your valid passport and the payment.
           </p>
         </div>
 
      
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 px-4">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-[#200164] from-[#200164] to-[#1a0845] font-sans rounded-[16px] p-6 sm:p-4 h-[499px] flex flex-col"
+              className="bg-[#200164] from-[#200164] to-[#1a0845] font-sans rounded-[16px] p-6 sm:p-4 min-h-[450px] xl:min-h-[499px] flex flex-col"
             >
           
-              <div className="flex items-center gap-2 mb-5">
-                <div className="w-13 h-13 relative flex-shrink-0">
+              <div className="flex items-center gap-1 mb-4">
+                <div className="w-10 h-10 relative flex-shrink-0">
                   <Image
                     src={step.iconSrc}
                     alt={step.title}
@@ -82,7 +82,7 @@ export default function TCFRegistrationProcess() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <div className="text-[#FFFFFF] text-[14px] font-medium  ">
+                  <div className="text-[#FFFFFF] text-[14px] font-medium">
                     {step.number}
                   </div>
                   <div className="text-white text-[20px] font-bold leading-[100%]">
@@ -96,7 +96,7 @@ export default function TCFRegistrationProcess() {
                 {step.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex items-start gap-3">
                     <div className="w-3.5 h-3.5 bg-red-500 rounded-[2px] flex-shrink-0 mt-0.5"></div>
-                    <p className="text-gray-100 text-[16px] leading-[150%] tracking-[2%] font-medium ">
+                    <p className="text-gray-100 text-[16px] leading-[150%] tracking-[2%] font-medium">
                       {item}
                     </p>
                   </div>

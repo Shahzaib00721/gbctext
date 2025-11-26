@@ -33,7 +33,7 @@ export default function RegistrationForms() {
 
   return (
     <div className=" bg-white p-4 mb-5 sm:px-4">
-      <div className="max-w-6xl mx-auto md:px-4 ">
+      <div className="max-w-6xl mx-auto sm:mx-[100px]  ">
        
         
 
@@ -49,7 +49,7 @@ export default function RegistrationForms() {
               key={index}
               className={`
                 ${form.isDark ? 'bg-[#3d3d3d]' : 'bg-[#E9EDF6]'}
-                rounded-xl p-2  text-center
+                rounded-[8px] p-2  text-center
                 hover:-translate-y-1 hover:shadow-xl
                 transition-all duration-300 cursor-pointer
                 flex flex-col items-center justify-center
@@ -61,7 +61,7 @@ export default function RegistrationForms() {
                 <img 
                   src={form.image} 
                   alt={form.title}
-                  className="w-8 h-8 object-contain mx-auto"
+                  className="w-10 h-10 object-contain mx-auto"
                 />
               </div>
 

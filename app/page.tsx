@@ -11,6 +11,9 @@ import Six from './Components/Six'
 import Seven from './Components/Seven'
 import Eight from './Components/Eight'
 import Nine from './Components/Nine'
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
 
  
 
@@ -25,8 +28,8 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white  shadow-md sticky  top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4  sm:px-3 ">
+    <header className="bg-white   shadow-md sticky  top-0 z-50">
+      <div className="max-w-6xl mx-auto sm:mx-[100px] px-4  sm:px-3 ">
         <nav className="flex items-center justify-baseline gap-8   pb-7">
         
           <a href="#" className="flex  items-center gap-3">
@@ -36,29 +39,33 @@ export default function Header() {
           </a>
 
          
-          <ul className="hidden lg:flex --font-inter font-semibold  items-center gap-7">
+          <ul className="hidden lg:flex --font-inter font-semibold text-[13px]  items-center gap-6">
             <li>
+
               <a href="#" className="text-[#333333] font-semibold hover:text-[#200164] transition-colors relative group">
+            
                 Home
+
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#200164] group-hover:w-full transition-all duration-300"></span>
+              </a>
+
+            </li>
+            <li>
+              <a href="#" className="text-[#333333] flex gap-1 font-semibold hover:text-[#200164] transition-colors relative group">
+                Testing  <img src="mark.svg" alt="" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#200164] group-hover:w-full transition-all duration-300 "></span>
               </a>
             </li>
             <li>
-              <a href="#" className="text-[#333333] font-semibold hover:text-[#200164] transition-colors relative group">
-                Testing ▾
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#200164] group-hover:w-full transition-all duration-300"></span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-[#333333] font-semibold hover:text-[#200164] transition-colors relative group">
-                Exam Preparation ▾
+              <a href="#" className="text-[#333333] flex gap-1 font-semibold hover:text-[#200164] transition-colors relative group">
+                Exam Preparation <img src="mark.svg" alt="" />
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#200164] group-hover:w-full transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a href="#" className="text-[#333333] font-semibold hover:text-[#200164] transition-colors relative group">
                 About Us
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-p[#200164] group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#200164] group-hover:w-full transition-all duration-300"></span>
               </a>
             </li>
             <li>
@@ -80,7 +87,7 @@ export default function Header() {
             <div className="flex bg-slate-100 rounded-full shadow-xl p-1 gap-1">
               <button
                 onClick={() => setActiveLang('EN')}
-                className={`px-3 py-1.5 rounded-full text-[18px] font-bold transition-all duration-300 ${
+                className={`px-3 py-1.5 rounded-full cursor-pointer text-[18px] font-bold transition-all duration-300 ${
                   activeLang === 'EN'
                     ? 'bg-[#200164] text-white shadow-md'
                     : 'text-slate-600 hover:bg-slate-200'
@@ -90,7 +97,7 @@ export default function Header() {
               </button>
               <button
                 onClick={() => setActiveLang('FR')}
-                className={`px-3 py-1.5 rounded-full text-[18px] font-bold transition-all duration-300 ${
+                className={`px-3 py-1.5 rounded-full cursor-pointer text-[18px] font-bold transition-all duration-300 ${
                   activeLang === 'FR'
                     ? 'bg-[#200164] text-white shadow-5xl'
                     : 'text-slate-600 hover:bg-slate-200'
@@ -101,7 +108,7 @@ export default function Header() {
             </div>
 
           
-            <button className="hidden sm:block text-[18px] px-6 py-2 border-2 border-[#F8393B] text-[#F8393B] font-semibold rounded-[6px] hover:bg-[#F8393B] hover:text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+            <button className="hidden sm:block cursor-pointer text-[18px] px-6 py-2 border-2 border-[#F8393B] text-[#F8393B] font-semibold rounded-[6px] hover:bg-[#F8393B] hover:text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
               Sign In
             </button>
 

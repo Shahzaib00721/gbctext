@@ -35,13 +35,13 @@ export default function VerifySteps() {
   ];
 
   return (
-    <div className="w-full bg-[#eef1f9] py-8 px-4 md:px-0 sm:py-12  ">
-      <div className="max-w-[340px] sm:max-w-6xl mx-auto md:px-4 ">
-        <h2 className="text-center text-[28px] leading-tight sm:text-[36px] font-semibold text-[#2c1a74] mb-8 sm:mb-10">
+    <div className="w-full bg-[#eef1f9] py-10 px-4 md:px-0 sm:py-12  ">
+      <div className="max-w-[340px] sm:max-w-6xl mx-auto sm:mx-[100px] md:px-4 ">
+        <h2 className="text-center text-[36px] leading-tight sm:text-[36px] font-semibold text-[#2c1a74] mb-8 sm:mb-10">
           Steps To Verify Your Results
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-0 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-5 ">
           {steps.map((step) => (
             <div 
               key={step.id} 

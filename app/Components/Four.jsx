@@ -1,8 +1,8 @@
 "use client";
 export default function TCFResultsTimeline() {
   return (
-    <div className="w-full bg-white pb-6   ">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="w-full bg-white py-10   ">
+      <div className="max-w-6xl mx-auto sm:mx-[100px] px-4">
         
         <h1 className="text-3xl sm:text-3xl lg:text-4xl font-semibold text-[#1a1a5e] mb-8 text-center">
           TCF Results Timeline And Format
@@ -36,7 +36,7 @@ export default function TCFResultsTimeline() {
               <ul className="space-y-3">
                 <li className="flex gap-2 text-sm sm:text-base text-gray-800">
                   <span className="text-[#1a1a5e] font-bold flex-shrink-0">•</span>
-                  <span className="text-[#200164] font-medium ">Information of the candidate, photo of the candidate and results.</span>
+                  <span className="text-[#200164] font-medium ">Information of the candidate, of the candidate and results.</span>
                 </li>
                 <li className="flex gap-2 text-sm sm:text-base text-gray-800">
                   <span className="text-[#1a1a5e] font-bold flex-shrink-0">•</span>
@@ -54,7 +54,7 @@ export default function TCFResultsTimeline() {
               <img 
                 src="/pen7.png" 
                 alt="Phone showing TCF certificate with Canadian flag" 
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain cursor-pointer "
               />
             </div>
           </div>

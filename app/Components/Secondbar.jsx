@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function TCFCanada() {
   return (
-    <div className="max-w-6xl mx-auto  px-4 p-3 bg-white">
+    <div className="max-w-6xl mx-auto sm:mx-[100px]  px-4 pt-10 bg-white">
       <h1 className="text-[35px] font-semibold text-[#1e0a5e]  mb-6">TCF Canada Test Overview</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10  ">
         <div className=''>
           <table className="w-full h-65 border border-[#D2D8E7] mb-4 text-[14px] text-[#252E47] ">
             <tbody>
@@ -48,10 +48,10 @@ export default function TCFCanada() {
             * Note we are currently only accepting payments through e-transfer or debit at our physical office location in North York.
           </div>
           <div className="flex flex-col md:flex-row gap-4  mt-8">
-            <button className="bg-red-500 text-white px-6 py-2 rounded-[6px]  h-[40px] lg:w-[200px] hover:bg-red-600 transition-colors">
+            <button className="bg-red-500 text-white px-6 py-2 cursor-pointer rounded-[6px]  h-[40px] lg:w-[200px] hover:bg-red-600 transition-colors">
               Book Now
             </button>
-            <button className="bg-red-500 text-white px-6 py-2 md:py-0  rounded-[6px]  h-[40px]  lg:w-[423px] hover:bg-red-600 transition-colors">
+            <button className="bg-red-500 text-white px-6 py-2 md:py-0 cursor-pointer  rounded-[6px]  h-[40px]  lg:w-[423px] hover:bg-red-600 transition-colors">
               Prepare For The Exam
             </button>
           </div>

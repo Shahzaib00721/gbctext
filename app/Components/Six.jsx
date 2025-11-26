@@ -59,7 +59,7 @@ export default function UpcomingTests() {
     }
   ];
 
-   // FIXED: correct hook + window check
+   
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -108,15 +108,15 @@ export default function UpcomingTests() {
 
 
   return (
-    <div className="w-full bg-white pt-8 pb-3 px-4 ">
-      <div className="max-w-6xl mx-auto md:px-4">
+    <div className="w-full bg-white p-10  px-4 ">
+      <div className="max-w-6xl mx-auto sm:mx-[100px]">
       
-        <h2 className="text-center text-[36px] sm:text-[36px] font-semibold text-[#1a1a4e] mb-10 sm:mb-5">
+        <h2 className="text-center text-[36px]  sm:text-[36px] font-semibold text-[#1a1a4e] mb-10 sm:mb-5">
           Upcoming Tests
         </h2>
 
        
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 lg:gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5 lg:gap-5 mb-10">
           {currentTests.map((test) => (
             <div 
               key={test.id} 
@@ -144,13 +144,13 @@ export default function UpcomingTests() {
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                     </svg>
-                    <span className='font-sans text-[#333333] font-regular text[14px]'>{test.time}</span>
+                    <span className='font-sans cursor-pointer  text-[#333333] font-regular text[14px]'>{test.time}</span>
                   </div>
                   <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-gray-700">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
                     </svg>
-                    <span className='font-sans text-[#333333] font-regular text[14px]'>{test.date}</span>
+                    <span className='font-sans cursor-pointer text-[#333333] font-regular text[14px]'>{test.date}</span>
                   </div>
                 </div>
 
@@ -159,23 +159,23 @@ export default function UpcomingTests() {
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
                   </svg>
-                  <span className='font-sans text-[#333333] font-regular text[14px]'>Registration Deadline</span>
-                  <span className="font-semibold font-sans text-[#333333]  text[14px]">{test.deadline}</span>
+                  <span className='font-sans text-[#333333] cursor-pointer font-regular text[14px]'>Registration Deadline</span>
+                  <span className="font-semibold font-sans text-[#333333] cursor-pointer  text[14px]">{test.deadline}</span>
                 </div>
 
               
-                <div className="flex items-center gap-20 mb-2">
+                <div className="flex items-center gap-15 mb-2">
                   <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-red-500 font-medium">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                     </svg>
-                    <span className='text-[#F8393B] font-sans font-semibold text-[16px]'>{test.location}</span>
+                    <span className='text-[#F8393B] font-sans cursor-pointer font-semibold text-[16px]'>{test.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-[13px] sm:text-[14px] text-red-500 font-medium">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd"/>
                     </svg>
-                    <span className='text-[14px] font-sans font-semibold text-[#F8393B]'>{test.type}</span>
+                    <span className='text-[14px] font-sans cursor-pointer font-semibold text-[#F8393B]'>{test.type}</span>
                   </div>
                 </div>
 
@@ -184,15 +184,14 @@ export default function UpcomingTests() {
                   {test.description}
                 </p>
 
-                {/* Price */}
                 <div className="text-center mb-4">
                   <span className="text-[24px] sm:text-[24px] font-bold text-[#333333] font-sans ">
                     {test.price}
                   </span>
                 </div>
 
-                {/* Button */}
-                <button className="w-full bg-[#ff3b3f] hover:bg-[#e63439] text-white text-[18px] font-semibold py-3 px-6 rounded-lg transition-colors duration-300  sm:text-[16px]">
+               
+                <button className="w-full cursor-pointer bg-[#ff3b3f] hover:bg-[#e63439] text-white text-[18px] font-semibold py-3 px-6 rounded-lg transition-colors duration-300  sm:text-[16px]">
                   Book Now
                 </button>
               </div>
@@ -200,12 +199,11 @@ export default function UpcomingTests() {
           ))}
         </div>
 
-        {/* Pagination */}
         <div className="flex items-center justify-center gap-6">
           <button 
             onClick={handlePrevPage}
             disabled={currentPage === 1}
-            className={`w-9 h-9 flex items-center justify-center transition-colors ${
+            className={`w-9 h-9 flex items-center cursor-pointer justify-center transition-colors ${
               currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
             }`}
           >
@@ -218,7 +216,7 @@ export default function UpcomingTests() {
             <button
               key={index + 1}
               onClick={() => handlePageChange(index + 1)}
-              className={`w-9 h-9 flex items-center justify-center rounded-4xl  font-bold text-[14px] transition-colors ${
+              className={`w-9 h-9 flex items-center cursor-pointer justify-center rounded-4xl  font-bold text-[14px] transition-colors ${
                 currentPage === index + 1
                   ? 'bg-[#1a1a4e] text-white'
                   : ' text-gray-700 hover:bg-gray-100'
@@ -231,11 +229,11 @@ export default function UpcomingTests() {
           <button 
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className={`w-9 h-9 flex items-center justify-center rounded-lg font-bold transition-colors ${
+            className={`w-9 h-9 flex cursor-pointer items-center justify-center rounded-lg font-bold transition-colors ${
               currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
             }`}
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 cursor-pointer text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
             </svg>
           </button>
