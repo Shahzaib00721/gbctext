@@ -32,10 +32,10 @@ export default function First() {
 
      
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center md:justify-start sm:gap-4">
-          <button className="bg-[#F8393B] hover:bg-red-700 cursor-pointer h-[43px] w-[163px] text-white text-md font-semibold leading-[100%]  rounded-[6px] transition-all duration-300 shadow-lg hover:shadow-xl text-md hover:-translate-y-0.5 ">
+          <button className="bg-[#F8393B] hover:bg-red-700 cursor-pointer h-[43px] w-[163px] text-white text-md font-semibold leading-[100%]  rounded-[6px] transition-all duration-300 shadow-lg hover:shadow-xl text-md  ">
             Book Now
           </button>
-          <button className="bg-[#F8393B] hover:bg-red-700 w-[260px] cursor-pointer h-[43px] text-white  leading-[100%] font-semibold  rounded-[6px] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-md">
+          <button className="bg-[#F8393B] hover:bg-red-700 w-[260px] cursor-pointer h-[43px] text-white  leading-[100%] font-semibold  rounded-[6px] transition-all duration-300 shadow-lg hover:shadow-xl  text-md">
             Prepare For The Exam
           </button>
         </div>
